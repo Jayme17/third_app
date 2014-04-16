@@ -69,7 +69,7 @@ describe "when confirmation is nil" do
 end
 
 describe "when password is too small" do
-	before { @user.password = @.password_confirmation = "aaaaa"}
+	before { @user.password = @.password_confirmation = "a" * 4}
 	it { should_not be_valid}
 end
 
